@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Rounded';
+  src: local('Rounded'), url(../fonts/Rounded.otf) format('opentype');
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  font-family: Rounded, Arial, sans-serif;
+  font-size: 4rem;
+  margin: 0 40rem 0 0;
+}
+
+.photo-board {
+  border-radius: 10%;
+  border: 5px solid white;
+  max-width: 50%;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0;
+}
+
+.social-icons {
+  width: 4.5rem;
+  margin-left: 3rem;
+}
