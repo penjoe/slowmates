@@ -1,0 +1,37 @@
+.team-wrap { 
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+
+  h2 {
+    font-family: Rounded, ariel, sans-serif;
+    font-size: 3rem;
+  }
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .team-card {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-family: Rounded, sans-serif;
+      font-size: 2rem;
+    }
+
+    img {
+      width: 80%;
+      border: solid white 4px;
+      border-radius: 50%;
+    }
+  }
+}
