@@ -1,0 +1,46 @@
+.roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0;
+
+  h1 {
+    font-family: Rounded, sans-serif;
+    font-size: 4rem;
+  }
+
+  p {
+    font-family: Rounded, sans-serif;
+    font-size: 1.8rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  img {
+    width: 75%;
+  }
+}
+
+.roadmap-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-family: Rounded, sans-serif;
+    font-size: 3rem;
+  }
+
+  p {
+    font-family: Rounded, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 1.5rem;
+    border: solid white 4px;
+    width: 60%
+  }
+}
