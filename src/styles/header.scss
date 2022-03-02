@@ -12,19 +12,22 @@
 .header-title {
   font-family: Rounded, Arial, sans-serif;
   font-size: 4rem;
-  margin: 0 40rem 0 0;
+  // margin: 0 40rem 0 0;
 }
 
 .photo-board {
   border-radius: 10%;
   border: 5px solid white;
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .header-nav {
+  width: 50%;
   display: flex;
   flex-direction: row;
   margin: 3rem 0;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social-icons {

@@ -8,7 +8,16 @@
   }
   p {
     width: 60%;
+    font-family: Rounded;
     font-size: 1.7rem;
     text-align: center;
+  }
+
+  .generation {
+    max-width: 50%;
+    border: solid white 4px;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
   }
 }
