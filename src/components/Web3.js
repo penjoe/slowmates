@@ -3,10 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
 
 // web3 connection
-import contract from '../web3/ABI.json';
+import { ADDRESS, ABI } from '../contracts/config';
 
-const address = '0x1816B07280f4B4aAB7905e71cD6326C538338e82';
-const abi = contract.abi;
 
 const Web3 = () => {
   const [currentAccount, setCurrentAccount] = useState(null);
@@ -55,7 +53,7 @@ const Web3 = () => {
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
-        const nftContract = new ethers.Contract(address, abi, signer);
+        const nftContract = new ethers.Contract(ADDRESS, ABI, signer);
 
         console.log('Initialize payment');
         let nftTxn = await nftContract.mintSlowmates(1, { value: ethers.utils.parseEther('0.4') });

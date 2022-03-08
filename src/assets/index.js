@@ -12,4 +12,5 @@ export const IMAGES = {
   grasslandsZone: require('./images/W2-grasslands.png'),
   volcanoZone: require('./images/volcano2.gif'),
   generation: require('./images/Generation.mp4'),
+  promo: require('./images/Slowmates_1.mp4'),
 };
