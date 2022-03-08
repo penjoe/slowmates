@@ -36,3 +36,43 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+
+  .team-wrap { 
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  
+    h2 {
+      margin-top: 8rem;
+      font-family: Rounded, sans-serif;
+      font-size: 3rem;
+    }
+  }
+
+  .team {
+    display: flex;
+    flex-direction: column;
+  
+    .team-card {
+      margin-top: .5srem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      h3 {
+        font-family: Rounded, sans-serif;
+        font-size: 2.5rem;
+      }
+  
+      img {
+        width: 100%;
+        border: solid white 4px;
+        border-radius: 20%;
+      }
+    }
+  }
+
+}
