@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { IMAGES } from '../assets';
-import Video from '../assets/images/Generation.mp4';
+// import { IMAGES } from '../assets';
+// import Video from '../assets/images/Generation.mp4';
 import Video2 from '../assets/images/Slowmates_1.mp4';
 
 const About = () => {
