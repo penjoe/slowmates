@@ -34,7 +34,7 @@ const Web3 = () => {
     const { ethereum } = window;
 
     if (!ethereum) {
-      alert('Please install Metamask!');
+      alert('Please install the Metamask browser extension or use the Metamask mobile app!');
     };
 
     try{
