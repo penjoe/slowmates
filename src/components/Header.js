@@ -8,12 +8,12 @@ const Header = () => {
   return(
     <div className='header'>
       <div className='header-nav'>
-        <h1 className='header-title'>Slowmates</h1>
+        <h1 className='header-title'>#findyourslowmate</h1>
         <div className="social-icons-wrap">
-          <a href='https://www.google.com'>
+          <a href='https://discord.gg/ktw4Pz5V5H'>
             <img className='social-icons discord-icon' src={IMAGES.discord} alt='discord logo' />
           </a>
-          <a href='https://www.google.com'>
+          <a href='https://twitter.com/slowmates'>
             <img className='social-icons twitter-icon' src={IMAGES.twitter} alt='twitter logo' />
           </a>
         </div>

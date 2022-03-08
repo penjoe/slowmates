@@ -8,9 +8,10 @@ const Team = () => {
     <div className="team-wrap">
       <h2>Meet the Slowmates Team</h2>
       <div className="team">
-        <TeamCard img={IMAGES.team1} name={'person one'}/>
-        <TeamCard img={IMAGES.team2} name={'person two'}/>
-        <TeamCard img={IMAGES.team3} name={'person three'}/>
+        <TeamCard img={IMAGES.masterginge} twitter={'https://twitter.com/Masterginge27'} name={'@Masterginge'}/>
+        <TeamCard img={IMAGES.steelneil} twitter={'https://twitter.com/Steelneil_'} name={'@SteelNeil.NFT'}/>
+        <TeamCard img={IMAGES.nichNotNick} twitter={'https://twitter.com/RetroRecordss'} name={'@nich.eth'}/>
+        <TeamCard img={IMAGES.team3} twitter={''} name={'@Karan'}/>
       </div>
     </div>
   );
