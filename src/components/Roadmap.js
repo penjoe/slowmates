@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import RoadmapSwiper from './RoadmapSwiper.js';
 import RoadmapCard from './RoadmapCard.js';
 import { IMAGES } from '../assets';
 
