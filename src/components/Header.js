@@ -18,6 +18,7 @@ const Header = () => {
           </a>
         </div>
       </div>
+      <h2>Slowmates</h2>
       <img className='photo-board' src={IMAGES.photoBoard} alt='main-hero' />
     </div>
   );
