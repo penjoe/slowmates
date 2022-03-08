@@ -13,4 +13,9 @@ export const IMAGES = {
   volcanoZone: require('./images/volcano2.gif'),
   generation: require('./images/Generation.mp4'),
   promo: require('./images/Slowmates_1.mp4'),
+  nichNotNick: require('./images/nichnotnick.png'),
+  steelneil: require('./images/steelneil.png'),
+  masterginge: require('./images/masterginge.png'),
+  banner: require('./images/banner.png'),
+  smile: require('./images/smile.png')
 };
