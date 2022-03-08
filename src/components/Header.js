@@ -9,8 +9,10 @@ const Header = () => {
     <div className='header'>
       <div className='header-nav'>
         <h1 className='header-title'>Slowmates</h1>
-        <a href='#'>
+        <a href='google.com'>
           <img className='social-icons discord-icon' src={IMAGES.discord} alt='discord logo' />
+        </a>
+        <a href="google.com">
           <img className='social-icons twitter-icon' src={IMAGES.twitter} alt='twitter logo' />
         </a>
       </div>
