@@ -17,5 +17,6 @@ export const IMAGES = {
   steelneil: require('./images/steelneil.png'),
   masterginge: require('./images/masterginge.png'),
   banner: require('./images/banner.png'),
-  smile: require('./images/smile.png')
+  smile: require('./images/smile.png'),
+  karan: require('./images/karan.png')
 };

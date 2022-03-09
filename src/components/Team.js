@@ -11,7 +11,7 @@ const Team = () => {
         <TeamCard img={IMAGES.masterginge} twitter={'https://twitter.com/Masterginge27'} name={'@Masterginge'}/>
         <TeamCard img={IMAGES.steelneil} twitter={'https://twitter.com/Steelneil_'} name={'@SteelNeil.NFT'}/>
         <TeamCard img={IMAGES.nichNotNick} twitter={'https://twitter.com/RetroRecordss'} name={'@nich.eth'}/>
-        <TeamCard img={IMAGES.team3} twitter={''} name={'@Karan'}/>
+        <TeamCard img={IMAGES.karan} twitter={'https://twitter.com/KaranKbKb'} name={'@KaranKbKb'}/>
       </div>
     </div>
   );
