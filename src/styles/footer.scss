@@ -1,5 +1,7 @@
 .footer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin: 8rem 0 2rem 0;
 
@@ -7,6 +9,11 @@
     margin: 0;
     font-family: Rounded, Arial, sans-serif;
     font-size: 2rem;
+  }
+  h4 {
+    margin: 0;
+    font-family: Rounded, Arial, sans-serif;
+    font-size: 1.5rem;
   }
 }
 
