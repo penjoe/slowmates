@@ -23,6 +23,10 @@
   background: orange;
 }
 
+.disable {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
   .web3 {
     display: flex;

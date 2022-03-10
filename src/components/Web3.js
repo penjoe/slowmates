@@ -71,7 +71,7 @@ const Web3 = () => {
 
   const connectWalletButton = () => {
     return (
-      <button onClick={connectWalletHandler} className='cta-button connect-wallet-button'>
+      <button onClick={connectWalletHandler} className='disable cta-button connect-wallet-button'>
         Connect Your Wallet
       </button>
     )
@@ -79,7 +79,7 @@ const Web3 = () => {
 
   const mintNftButton = () => {
     return(
-      <button onClick={mintNftHandler} className="cta-button mint-nft-button">
+      <button onClick={mintNftHandler} className="disable cta-button mint-nft-button">
         Mint your Slowmate!
       </button>
     );
@@ -88,6 +88,7 @@ const Web3 = () => {
   return(
     <div className="web3">
       <div>
+        {currentAccount ? mintNftButton() : connectWalletButton()}
         <button className='cta-button mint-nft-button'>
           Minting coming soon!
         </button>
@@ -97,5 +98,3 @@ const Web3 = () => {
 };
 
 export default Web3;
-
-// {currentAccount ? mintNftButton() : connectWalletButton()}
