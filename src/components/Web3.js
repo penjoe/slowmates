@@ -88,10 +88,14 @@ const Web3 = () => {
   return(
     <div className="web3">
       <div>
-        {currentAccount ? mintNftButton() : connectWalletButton()}
+        <button className='cta-button mint-nft-button'>
+          Minting coming soon!
+        </button>
       </div>
     </div>
   );
 };
 
 export default Web3;
+
+// {currentAccount ? mintNftButton() : connectWalletButton()}
