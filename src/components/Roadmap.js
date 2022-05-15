@@ -16,7 +16,6 @@ const Roadmap = () => {
       <img src={IMAGES.worldmap2} alt="" />
       <RoadmapCard img={IMAGES.waterfallZone} zoneName={'World One - Waterfall'} text={text1} />
       <RoadmapCard img={IMAGES.grasslandsZone} zoneName={'World Two - Grasslands'} text={text2} />
-      <RoadmapCard img={IMAGES.volcanoZone} zoneName={'World Three - Volcano'} text={text3} />
     </div>
   );
 };
