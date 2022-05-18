@@ -9,6 +9,7 @@ import Roadmap from './Roadmap.js';
 import Team from './Team.js';
 import Footer from './Footer.js';
 import Divider from './Divider.js';
+import Nav from './Nav.js';
 
 // stylesheets
 import '../styles/app.scss';
@@ -19,10 +20,12 @@ import '../styles/roadmap.scss';
 import '../styles/team.scss';
 import '../styles/footer.scss';
 import '../styles/divider.scss';
+import '../styles/nav.scss';
 
 const App = () => {
   return(
     <>
+      <Nav />
       <Header />
       <Web3 />
       <About />
