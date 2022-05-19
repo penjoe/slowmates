@@ -7,7 +7,6 @@ const Roadmap = () => {
   
   const text1 = 'The Waterfall marks the beginning of the Slowmates Universe.  In this world, we’ll find the near term activations planned for Slowmates, including the launch of $SLOW.  You’ll notice that we can journey to World 2 shortly after unlocking $SLOW.';
   const text2 = 'The Grasslands will unlock shortly after the release of $SLOW.  This world features a variety of token activations.  For now, we\'ll let you speculate on some of the activations, the exact details will be revealed as we make our way across the Grasslands map.  I think I might see a fork to World 3 hidden in the World 2 map as well.';
-  const text3 = 'Coming soon...';
 
   return(
     <div className="roadmap">
