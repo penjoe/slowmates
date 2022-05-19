@@ -22,6 +22,9 @@ import '../styles/footer.scss';
 import '../styles/divider.scss';
 import '../styles/nav.scss';
 
+// images
+import { IMAGES } from '../assets';
+
 const App = () => {
   return(
     <>
@@ -29,9 +32,9 @@ const App = () => {
       <Header />
       <Web3 />
       <About />
-      <Divider />
+      <Divider src={IMAGES.dividerDarkBottom} />
       <Roadmap />
-      <Divider />
+      <Divider src={IMAGES.dividerDarkTop} />
       <Team />
       <Footer />
     </>
