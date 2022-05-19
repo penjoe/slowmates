@@ -1,5 +1,4 @@
 // dependencies
-import { hexZeroPad } from "ethers/lib/utils";
 import React from "react";
 
 //assets
