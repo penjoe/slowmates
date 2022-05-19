@@ -1,12 +1,26 @@
 @font-face {
-  font-family: 'Rounded';
-  src: local('Rounded'), url(../fonts/Rounded.otf) format('opentype');
+  font-family: "Rounded";
+  src: local("Rounded"), url(../fonts/Rounded.otf) format("opentype");
 }
 
+// .background {
+//   // position: relative;
+//   // padding-bottom: ;
+//   // background-image: url(../assets/images/slowmates-hero.png);
+//   // background-repeat: no-repeat;
+//   // background-size: cover;
+
+//   background-image: url(../assets/images/slowmates-hero.png);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   height: 100px;
+//   padding-top: 50.25%;
+// }
+
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: relative;
+  background-color: transparent;
 }
 
 .header-title {
@@ -15,33 +29,36 @@
   // margin: 0 40rem 0 0;
 }
 
-.photo-board {
-  border-radius: 10%;
-  border: 5px solid white;
-  max-width: 60%;
+.hero-image {
+  width: 100%;
 }
 
 .header-nav {
+  position: sticky; 
+  top: 0;
   width: 60%;
   display: flex;
   flex-direction: row;
   margin-bottom: 3rem;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.social-icons {
-  width: 3.5rem;
-  margin-left: 1rem;
+.social-icons-wrap {
+  background-color: transparent;
+
+  .social-icons {
+    width: 3.5rem;
+    margin-left: 1rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   @font-face {
-    font-family: 'Rounded';
-    src: local('Rounded'), url(../fonts/Rounded.otf) format('opentype');
+    font-family: "Rounded";
+    src: local("Rounded"), url(../fonts/Rounded.otf) format("opentype");
   }
-  
+
   .header {
     display: flex;
     flex-direction: column;
@@ -52,17 +69,17 @@
       font-size: 5rem;
     }
   }
-  
+
   .header-title {
     font-family: Rounded, Arial, sans-serif;
     font-size: 2.5rem;
     // margin: 0 40rem 0 0;
   }
-  
+
   .photo-board {
     display: none;
   }
-  
+
   .header-nav {
     width: 100%;
     display: flex;
@@ -74,9 +91,8 @@
     h1 {
       font-size: 1.7rem;
     }
-
   }
-  
+
   .social-icons {
     width: 3.2rem;
     margin-left: 1rem;

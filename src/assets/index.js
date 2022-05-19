@@ -19,5 +19,9 @@ export const IMAGES = {
   banner: require('./images/banner.png'),
   smile: require('./images/smile.png'),
   karan: require('./images/karan.png'),
-  divider: require('./images/slowmates-divider.png')
+  divider: require('./images/slowmates-divider.png'),
+  hero: require('./images/slowmates-hero.png'),
+  dividerClean: require('./images/divider-clean.png'),
+  dividerDarkBottom: require('./images/divider-2.png'),
+  dividerDarkTop: require('./images/divider-1.png'),
 };
