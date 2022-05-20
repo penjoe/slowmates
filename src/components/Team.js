@@ -8,7 +8,7 @@ import { IMAGES } from '../assets';
 const Team = () => {
   return(
     <div className="team-wrap">
-      <a id='team-href' />
+      <a id='team' />
       <h2>Meet the Slowmates Team</h2>
       <div className="team">
         <TeamCard img={IMAGES.masterginge} twitter={'https://twitter.com/Masterginge27'} name={'@Masterginge'}/>
