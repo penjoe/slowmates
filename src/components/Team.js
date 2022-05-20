@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
 import TeamCard from './TeamCard.js';
@@ -6,6 +8,7 @@ import { IMAGES } from '../assets';
 const Team = () => {
   return(
     <div className="team-wrap">
+      <a id='team-href' />
       <h2>Meet the Slowmates Team</h2>
       <div className="team">
         <TeamCard img={IMAGES.masterginge} twitter={'https://twitter.com/Masterginge27'} name={'@Masterginge'}/>

@@ -5,7 +5,7 @@ const RoadmapCard = ({ zoneName, img, text }) => {
     <div className="roadmap-card">
       <h2>{zoneName}</h2>
       <p>{text}</p>
-      <img src={img} alt={zoneName} />
+      <img className='zone-map' src={img} alt={zoneName} />
     </div>
   );
 };
