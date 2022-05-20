@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+/* eslint-disable jsx-a11y/anchor-has-content */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState } from "react";
 
-import { ethers } from 'ethers';
+// import { ethers } from "ethers";
 
 // web3 connection
-import { ADDRESS, ABI } from '../contracts/config';
-
+// import { ADDRESS, ABI } from "../contracts/config";
 
 const Web3 = () => {
   const [currentAccount, setCurrentAccount] = useState(null);
@@ -13,86 +14,93 @@ const Web3 = () => {
     const { ethereum } = window;
 
     if (!ethereum) {
-      console.log('no wallet');
+      console.log("no wallet");
     } else {
-      console.log('wallet is good')
+      console.log("wallet is good");
     }
 
-    const accounts = await ethereum.request({ method: 'eth_accounts' });
+    const accounts = await ethereum.request({ method: "eth_accounts" });
 
     if (accounts.length !== 0) {
       const account = accounts[0];
-      console.log('Found an authorized account: ', account);
+      console.log("Found an authorized account: ", account);
       setCurrentAccount(account);
     } else {
-      console.log('no authoried account found');
+      console.log("no authoried account found");
     }
   };
-  checkWalletIsConnected()
+  checkWalletIsConnected();
 
   const connectWalletHandler = async () => {
     const { ethereum } = window;
 
     if (!ethereum) {
-      alert('Please install the Metamask browser extension or use the Metamask mobile app!');
-    };
+      alert(
+        "Please install the Metamask browser extension or use the Metamask mobile app!"
+      );
+    }
 
-    try{
-      const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
-      console.log('Found an account! Address: ', accounts[0]);
+    try {
+      const accounts = await ethereum.request({
+        method: "eth_requestAccounts",
+      });
+      console.log("Found an account! Address: ", accounts[0]);
       setCurrentAccount(accounts[0]);
-    } catch(e) {
+    } catch (e) {
       console.log(e.message);
     }
   };
 
-  const mintNftHandler = async () => {
-    try {
-      const { ethereum } = window;
+  // const mintNftHandler = async () => {
+  //   try {
+  //     const { ethereum } = window;
 
-      if (ethereum) {
-        const provider = new ethers.providers.Web3Provider(ethereum);
-        const signer = provider.getSigner();
-        const nftContract = new ethers.Contract(ADDRESS, ABI, signer);
+  //     if (ethereum) {
+  //       const provider = new ethers.providers.Web3Provider(ethereum);
+  //       const signer = provider.getSigner();
+  //       const nftContract = new ethers.Contract(ADDRESS, ABI, signer);
 
-        console.log('Initialize payment');
-        let nftTxn = await nftContract.mintSlowmates(1, { value: ethers.utils.parseEther('0.4') });
+  //       console.log("Initialize payment");
+  //       let nftTxn = await nftContract.mintSlowmates(1, {
+  //         value: ethers.utils.parseEther("0.04"),
+  //       });
 
-        console.log('Mining... Please wait');
-        await nftTxn.wait();
+  //       console.log("Mining... Please wait");
+  //       await nftTxn.wait();
 
-        console.log('minted')
-      }
-
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  //       console.log("minted");
+  //     }
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
   const connectWalletButton = () => {
     return (
-      <button onClick={connectWalletHandler} className='disable cta-button connect-wallet-button'>
+      <button
+        onClick={connectWalletHandler}
+        className="cta-button connect-wallet-button"
+      >
         Connect Your Wallet
-      </button>
-    )
-  }
-
-  const mintNftButton = () => {
-    return(
-      <button onClick={mintNftHandler} className="disable cta-button mint-nft-button">
-        Mint your Slowmate!
       </button>
     );
   };
 
-  return(
+  // const mintNftButton = () => {
+  //   return (
+  //     <button
+  //       onClick={mintNftHandler}
+  //       className="disable cta-button mint-nft-button"
+  //     >
+  //       Mint your Slowmate!
+  //     </button>
+  //   );
+  // };
+
+  return (
     <div className="web3">
-      <div>
-        {currentAccount ? mintNftButton() : connectWalletButton()}
-        <button className='cta-button mint-nft-button'>
-          Minting coming soon!
-        </button>
-      </div>
+      <div>{currentAccount ? connectWalletButton() : connectWalletButton()}</div>
+      <a id="mint-href" />
     </div>
   );
 };
