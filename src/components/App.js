@@ -21,6 +21,7 @@ import '../styles/team.scss';
 import '../styles/footer.scss';
 import '../styles/divider.scss';
 import '../styles/nav.scss';
+import '../styles/marquee.scss';
 
 // images
 import { IMAGES } from '../assets';

@@ -11,6 +11,7 @@
   h1 {
     font-family: Rounded, sans-serif;
     font-size: 4rem;
+    padding-bottom: 2rem;
   }
 
   p {
@@ -21,7 +22,12 @@
   }
 
   img {
-    width: 70%;
+    width: 75%;
+    margin: 5rem 0;
+  }
+
+  .zone-map {
+    box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
   }
 }
 
@@ -34,6 +40,7 @@
     font-family: Rounded, sans-serif;
     font-size: 3rem;
     display: initial;
+    padding-bottom: 2rem;
   }
 
   p {
