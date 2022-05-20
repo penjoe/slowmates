@@ -12,7 +12,7 @@ const Roadmap = () => {
 
   return(
     <div className="roadmap">
-      <a id='roadmap-href' />
+      <a id='roadmap' />
       <h1>Welcome to Slowmates Island</h1>
       <p>Slowmates Island is a land of NFT adventure with lots of discovery to be made. The Slowmates Island map features nine distinct worlds, each with different roadmap activations that will be unlocked as we go through our journey. As you can see in the map, two worlds Waterfall and Grasslands have already been unlocked. What mysteries lie behind the remaining seven worlds?</p>
       <img src={IMAGES.worldmap2} alt="" />
