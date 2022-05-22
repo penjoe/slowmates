@@ -24,4 +24,5 @@ export const IMAGES = {
   dividerClean: require('./images/divider-clean.png'),
   dividerDarkBottom: require('./images/divider-2.png'),
   dividerDarkTop: require('./images/divider-1.png'),
+  heroBorder: require('./images/slowmates-hero-border.png')
 };

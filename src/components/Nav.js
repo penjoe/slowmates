@@ -1,9 +1,16 @@
 import React from 'react';
 
+import { IMAGES } from '../assets/';
+
 const Nav = () => {
   return (
     <div className='nav'>
-      <h3 className='findslowmate'>#findyourslowmate</h3>
+      <div className='logo-wrap'>
+        <a href='/#'>
+          <img className='nav-logo' src={IMAGES.smile} alt='' />
+        </a>
+        <h3 className='findslowmate'>#findyourslowmate</h3>
+      </div>
       <div className='link-wrapper'>
         <a className='nav-links' href='/#'>Home</a>
         {/* <a className='nav-links' href='#mint-href'>Mint</a> */}
