@@ -7,7 +7,7 @@ import { IMAGES } from "../assets";
 const Header = () => {
   return (
     <div className="header">
-      <img className="hero-image" src={IMAGES.hero} alt="main-hero" />
+      <img className="hero-image" src={IMAGES.heroBorder} alt="main-hero" />
     </div>
   );
 };

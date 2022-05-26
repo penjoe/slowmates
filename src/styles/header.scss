@@ -23,35 +23,35 @@
   background-color: transparent;
 }
 
-.header-title {
-  font-family: Rounded, Arial, sans-serif;
-  font-size: 2.5rem;
-  // margin: 0 40rem 0 0;
-}
+// .header-title {
+//   font-family: Rounded, Arial, sans-serif;
+//   font-size: 2.5rem;
+//   // margin: 0 40rem 0 0;
+// }
 
 .hero-image {
   width: 100%;
 }
 
-.header-nav {
-  position: sticky; 
-  top: 0;
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 3rem;
-  align-items: center;
-  justify-content: space-between;
-}
+// .header-nav {
+//   position: sticky; 
+//   top: 0;
+//   width: 60%;
+//   display: flex;
+//   flex-direction: row;
+//   margin-bottom: 3rem;
+//   align-items: center;
+//   justify-content: space-between;
+// }
 
-.social-icons-wrap {
-  background-color: transparent;
+// .social-icons-wrap {
+//   background-color: transparent;
 
-  .social-icons {
-    width: 3.5rem;
-    margin-left: 1rem;
-  }
-}
+//   .social-icons {
+//     width: 3.5rem;
+//     margin-left: 1rem;
+//   }
+// }
 
 @media only screen and (max-width: 600px) {
   @font-face {
@@ -64,43 +64,43 @@
     flex-direction: column;
     align-items: center;
 
-    h2 {
-      display: initial;
-      font-size: 5rem;
-    }
+    // h2 {
+    //   display: initial;
+    //   font-size: 5rem;
+    // }
   }
 
-  .header-title {
-    font-family: Rounded, Arial, sans-serif;
-    font-size: 2.5rem;
-    // margin: 0 40rem 0 0;
-  }
+  // .header-title {
+  //   font-family: Rounded, Arial, sans-serif;
+  //   font-size: 2.5rem;
+  //   // margin: 0 40rem 0 0;
+  // }
 
-  .photo-board {
-    display: none;
-  }
+  // .photo-board {
+  //   display: none;
+  // }
 
-  .header-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 0;
-    align-items: center;
-    justify-content: space-between;
+  // .header-nav {
+  //   width: 100%;
+  //   display: flex;
+  //   flex-direction: row;
+  //   margin-bottom: 0;
+  //   align-items: center;
+  //   justify-content: space-between;
 
-    h1 {
-      font-size: 1.7rem;
-    }
-  }
+  //   h1 {
+  //     font-size: 1.7rem;
+  //   }
+  // }
 
-  .social-icons {
-    width: 3.2rem;
-    margin-left: 1rem;
-  }
-}
+//   .social-icons {
+//     width: 3.2rem;
+//     margin-left: 1rem;
+//   }
+// }
 
-@media only screen and (min-width: 601px) {
-  h2 {
-    display: none;
-  }
+// @media only screen and (min-width: 601px) {
+//   h2 {
+//     display: none;
+//   }
 }
