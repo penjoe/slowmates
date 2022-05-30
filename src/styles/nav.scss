@@ -25,21 +25,25 @@
     }
   }
 
-  .nav-links {
-    text-decoration: none;
-    color: rgb(228, 228, 228);
-    margin: 0.7rem;
-    font-size: 1.5rem;
-    background: transparent;
-    opacity: 1;
-    text-shadow: 1.5px 1.5px 1.5px #555;
-  }
+  // .nav-links {
+    // @media only screen and (max-width: 769px) {
+    //   display: none;
+    // }
 
-  .nav-links:visited {
-    color: rgb(228, 228, 228);
-  }
+  //   text-decoration: none;
+  //   color: rgb(228, 228, 228);
+  //   margin: 0.7rem;
+  //   font-size: 1.5rem;
+  //   background: transparent;
+  //   opacity: 1;
+  //   text-shadow: 1.5px 1.5px 1.5px #555;
+  // }
 
-  .nav-links:hover {
-    text-decoration: underline;
-  }
+  // .nav-links:visited {
+  //   color: rgb(228, 228, 228);
+  // }
+
+  // .nav-links:hover {
+  //   text-decoration: underline;
+  // }
 }
