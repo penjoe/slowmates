@@ -78,10 +78,11 @@ const Web3 = () => {
   const connectWalletButton = () => {
     return (
       <button
+        disabled
         onClick={connectWalletHandler}
         className="cta-button connect-wallet-button"
       >
-        Connect Your Wallet
+        Mint coming soon!
       </button>
     );
   };
@@ -99,7 +100,7 @@ const Web3 = () => {
 
   return (
     <div className="web3">
-      <div>{currentAccount ? connectWalletButton() : connectWalletButton()}</div>
+      <div className='button-container' >{currentAccount ? connectWalletButton() : connectWalletButton()}</div>
       <a id="mint-href" />
     </div>
   );

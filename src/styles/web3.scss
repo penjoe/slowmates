@@ -14,14 +14,20 @@
   min-width: 250px;
   color: white;
   font-size: 2rem;
-  cursor: pointer;
+  cursor: wait;
   margin-top: 2rem;
   box-shadow: 5px 5px 3px 0px rgba(0,0,0,0.75);
 }
 
 .connect-wallet-button {
-  background: rgb(32, 129, 226);
+  // background: rgb(32, 129, 226); // for when minting is live
+  background-color: grey;
+  cursor: wait;
   margin-right: 1 rem;
+}
+
+.button-container {
+  cursor: wait;
 }
 
 .mint-nft-button {
@@ -52,7 +58,8 @@
   }
   
   .connect-wallet-button {
-    background: rgb(32, 129, 226);
+    // background: rgb(32, 129, 226);
+    background-color: grey;
   }
   
   .mint-nft-button {
