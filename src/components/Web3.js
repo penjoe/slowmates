@@ -31,25 +31,25 @@ const Web3 = () => {
   };
   checkWalletIsConnected();
 
-  const connectWalletHandler = async () => {
-    const { ethereum } = window;
+  // const connectWalletHandler = async () => {
+  //   const { ethereum } = window;
 
-    if (!ethereum) {
-      alert(
-        "Please install the Metamask browser extension or use the Metamask mobile app!"
-      );
-    }
+  //   if (!ethereum) {
+  //     alert(
+  //       "Please install the Metamask browser extension or use the Metamask mobile app!"
+  //     );
+  //   }
 
-    try {
-      const accounts = await ethereum.request({
-        method: "eth_requestAccounts",
-      });
-      console.log("Found an account! Address: ", accounts[0]);
-      setCurrentAccount(accounts[0]);
-    } catch (e) {
-      console.log(e.message);
-    }
-  };
+  //   try {
+  //     const accounts = await ethereum.request({
+  //       method: "eth_requestAccounts",
+  //     });
+  //     console.log("Found an account! Address: ", accounts[0]);
+  //     setCurrentAccount(accounts[0]);
+  //   } catch (e) {
+  //     console.log(e.message);
+  //   }
+  // };
 
   // const mintNftHandler = async () => {
   //   try {
@@ -78,8 +78,7 @@ const Web3 = () => {
   const connectWalletButton = () => {
     return (
       <button
-        disabled
-        onClick={connectWalletHandler}
+        // onClick={connectWalletHandler}
         className="cta-button connect-wallet-button"
       >
         Mint coming soon!
